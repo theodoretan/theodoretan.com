@@ -1,0 +1,61 @@
+body {
+    background-color:#195E71;
+    background-image:url('/images/Background.png');
+    background-position:center top;
+    background-repeat:no-repeat;
+    <!-- keep the image the same size -->
+    background-size: cover;
+    color:white;
+}
+
+h1, h6, p {   
+    font-family:Noto Sans, Century Gothic, sans-serif;
+}
+
+h1 {
+    font-size:80px;
+    text-align:center;
+}
+
+h6 {
+    text-align:right;
+    padding-right:20px;
+}
+
+span {
+    border:11px solid white;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+img {
+    width:100px;
+    height: auto;
+}
+
+a {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.header {
+    padding:30px;
+}
+
+.content {
+    padding-bottom:58px;
+}
+
+.slide {
+    font-size:35px;
+    text-align:center;
+}
+
+.links {
+    text-align:center;
+    padding-top:35px;
+}
+
+.words {
+    padding-top:5px;
+}
