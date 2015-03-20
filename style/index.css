@@ -1,10 +1,9 @@
 body {
+    background: url('/images/Background.png') top center no-repeat;
     background-color:#195E71;
-    background-image:url('/images/Background.png');
-    background-position:center top;
-    background-repeat:no-repeat;
-    <!-- keep the image the same size -->
     background-size: cover;
+    height: 100%;
+    width: 100%;
     color:white;
 }
 
