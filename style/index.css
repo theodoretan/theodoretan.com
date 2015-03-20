@@ -1,9 +1,7 @@
 body {
-    background: url('/images/Background.png') top center no-repeat;
+    background: url('/images/Background.png') top center no-repeat fixed;
     background-color:#195E71;
     background-size: cover;
-    height: 100%;
-    width: 100%;
     color:white;
 }
 
