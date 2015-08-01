@@ -1,0 +1,38 @@
+body {
+    background:#000;
+    font-family:Julius Sans One,Sawasdee,Tahoma,sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.lander {
+    margin:20px 12px 20px 13px;
+    background: url(https://unsplash.it/g/1920/1080?image=381) no-repeat 50% 50%;
+    background-size:cover;
+    background-attachment: fixed;
+    height:85vh;
+    padding:2em;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+.name {
+    padding:0 2em 0 2em;
+    max-width: 400px;
+    border: 5px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.nav-bar {
+    list-style: none;
+
+}
