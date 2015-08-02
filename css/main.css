@@ -1,14 +1,27 @@
+/** GENERAL */
 body {
     background:#000;
     font-family:Julius Sans One,Sawasdee,Tahoma,sans-serif;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6,p,span {
     text-transform: uppercase;
 }
 
+a {
+    display:inline-block;
+    text-decoration: none;
+}
+
+.section {
+    background-color:#ddd;
+    margin: 0 12px 0 12px;
+    display: inline-block;
+}
+/** LANDER */
+
 .lander {
-    margin:20px 12px 20px 13px;
+    margin:20px 12px 20px 12px;
     background: url(https://unsplash.it/g/1920/1080?image=381) no-repeat 50% 50%;
     background-size:cover;
     background-attachment: fixed;
@@ -25,6 +38,7 @@ h1 {
 }
 
 .name {
+    margin:auto;
     padding:0 2em 0 2em;
     max-width: 400px;
     border: 5px solid #ddd;
@@ -32,7 +46,86 @@ h1 {
 }
 
 
+/** NAV BAR */
+.header{
+    /* this width bullshit aint working */
+    /*width: calc(100% - 2em);*/
+    position: relative;
+}
+
+.a {
+    background:#eee;
+    height:50px;
+    padding:5px;
+    border-radius:5px;
+    /*margin: 0 12px 0 12px;*/
+}
+
+.home-icon {
+    float:left;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.logo {
+    width:50px;
+    margin-left:auto;
+    margin-right: auto;
+    pointer-events: none;
+}
+
+.navigation {
+    float:right;
+}
+
 .nav-bar {
     list-style: none;
+}
 
+.nav-bar li {
+    display:inline;
+}
+
+
+/** FOOTER */
+.footer {
+    margin:0;
+    width:100%;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+}
+
+.copy {
+    float:right;
+    padding-right:5px;
+}
+
+.coffee-icon {
+    vertical-align: middle;
+    height:20px;
+}
+
+/** HELPER CLASS CSS */
+
+.light-hidden {
+    display:none;
+}
+
+.hidden {
+    display:none!important;
+    visibility:hidden;
+}
+
+.invisible {
+    visibility:hidden;
+}
+
+.fixed {
+    position:fixed;
+    width: calc(100% - 50px);
+}
+
+pre {
+    color:#fff;
+    text-align: center;
 }

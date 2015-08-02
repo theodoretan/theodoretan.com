@@ -25,4 +25,14 @@ function Queue() {
             return queue[0];
         }
     }
+
+    this.swap = function(a,b) {
+        var temp = queue[a];
+        queue[a] = queue[b];
+        queue[b] = temp;
+    }
+
+    this.check = function(){
+        console.log(JSON.stringify(queue));
+    }
 }
