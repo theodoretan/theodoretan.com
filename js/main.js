@@ -1,10 +1,13 @@
 var list = ['developer','dancer','comic book enthusiast','student','golden hawk','hacker','black coffee drinker'];
 var queue = new Queue();
+insertVal();
+
+window.setInterval(scroll, 3000);
 
 $(function(){
     console.log("ready");
-    insertVal();
-
+    // setTimeout(scroll(), 1);
+    // window.setInterval(scroll(), 1000);
     /** Nav bar lock function */
     // need to recalculate height when user changes screen size like un-maximizing the window
     var height = $(window).height();
@@ -14,6 +17,7 @@ $(function(){
         });
         stayUp(height);
     })
+
 });
 
 function insertVal(){
@@ -27,6 +31,21 @@ function insertVal(){
         } while (a === b);
         queue.swap(a,b);
     }
+}
+
+function getVal(){
+    if (queue.peek() === false) {
+        insertVal();
+    }
+    return queue.remove();
+}
+
+function scroll(){
+    var scroller = $('.scroller p');
+    scroller.fadeOut(400, function() {
+        scroller.text(getVal());
+        scroller.fadeIn(400);
+    });
 }
 
 function stayUp(height){

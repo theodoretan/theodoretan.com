@@ -2,6 +2,7 @@
 body {
     background:#000;
     font-family:Julius Sans One,Sawasdee,Tahoma,sans-serif;
+    margin:0;
 }
 
 h1,h2,h3,h4,h5,h6,p,span {
@@ -11,22 +12,31 @@ h1,h2,h3,h4,h5,h6,p,span {
 a {
     display:inline-block;
     text-decoration: none;
+    margin: 0 7px 0 7px;
+    color:#123;
 }
 
 .section {
     background-color:#ddd;
-    margin: 0 12px 0 12px;
-    display: inline-block;
+    height:85vh;
+    margin:20px 12px 20px 12px;
+}
+
+.header, .footer {
+    background-color:#ddd;
+    /*margin: 0 12px 0 12px;*/
+    display:inline-block;
 }
 /** LANDER */
 
 .lander {
-    margin:20px 12px 20px 12px;
+    /*margin:20px 15px;*/
     background: url(https://unsplash.it/g/1920/1080?image=381) no-repeat 50% 50%;
+    /*background:url('/images/Background.png') no-repeat 50% 50%;*/
     background-size:cover;
     background-attachment: fixed;
-    height:85vh;
-    padding:2em;
+    height:100vh;
+    /*padding:2em;*/
     align-items:center;
     justify-content: center;
     display:flex;
@@ -45,20 +55,23 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.name h1 {
+    font-size:35px;
+}
+
+.scroller p {
+    font-size:20px;
+}
 
 /** NAV BAR */
 .header{
     /* this width bullshit aint working */
     /*width: calc(100% - 2em);*/
     position: relative;
-}
-
-.a {
     background:#eee;
     height:50px;
-    padding:5px;
-    border-radius:5px;
-    /*margin: 0 12px 0 12px;*/
+    padding:5px 0;
+    /*border-radius:5px;*/
 }
 
 .home-icon {
@@ -84,24 +97,32 @@ a {
 
 .nav-bar li {
     display:inline;
+    padding: 21px 0 21px 0;
+    border-radius: 2px;
+}
+
+.nav-bar li:hover {
+    background-color: #444;
+
 }
 
 
 /** FOOTER */
 .footer {
     margin:0;
+    padding:10px 0;
     width:100%;
-    padding: 5px 0 5px 0;
-    border-radius: 5px;
+    /*padding: 5px 0 5px 0;
+    border-radius: 5px;*/
 }
 
 .copy {
     float:right;
-    padding-right:5px;
+    padding-right:10px;
 }
 
 .coffee-icon {
-    vertical-align: middle;
+    vertical-align: sub;
     height:20px;
 }
 
@@ -122,10 +143,19 @@ a {
 
 .fixed {
     position:fixed;
-    width: calc(100% - 50px);
+    width:100%;
 }
 
-pre {
-    color:#fff;
-    text-align: center;
+.clearfix::before,
+.clearfix::after {
+    content:" ";
+    display:table;
+}
+
+.clearfix::after {
+    clear:both;
+}
+
+.clearfix {
+    *zoom:1;
 }
