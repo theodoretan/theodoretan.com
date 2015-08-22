@@ -84,7 +84,7 @@ function scrollToClass(id) {
 }
 
 var openResume = function() {
-  window.open('files/resume.pdf');
+  window.open('files/Resume.pdf');
 }
 
 var github = function() {
