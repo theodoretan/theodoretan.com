@@ -35,8 +35,12 @@ li {
   display:flex;
   justify-content: center;
   align-items: center;
-  background-size:cover;
-  background-attachment: fixed;
+  background-size:cover!important;
+  background-attachment: fixed!important;
+}
+
+.content {
+  font-size:17px;
 }
 
 .header, .footer {
@@ -129,6 +133,10 @@ li {
   background-color: #444;
 }
 
+.nav-bar li:hover a {
+  color:#ddd;
+}
+
 .fixed {
   position:fixed;
   width:100%;
@@ -157,7 +165,7 @@ li {
   max-width:350px;
   margin:30px;
   border-top-style:dashed;
-  font-size:20px;
+  /*font-size:17px;*/
 }
 
 
@@ -168,7 +176,7 @@ li {
 
 .exp-content {
   border-top:dashed;
-  font-size: 17px;
+  /*font-size: 17px;*/
   margin:30px;
 }
 
@@ -184,11 +192,23 @@ li {
   margin:15px;
 }
 
+.exp-content span {
+  cursor: pointer;
+}
+
+.exp-content span:hover {
+  color:#79CA7D;
+}
+
 .resume {
   text-align:center;
 }
 
-.resume p {
+.resume span:hover {
+  color:#79CA7D;
+}
+
+.resume span{
   cursor: pointer;
 }
 
@@ -200,7 +220,7 @@ li {
 .projects-content {
   text-align: center;
   border-top:dashed;
-  font-size:20px;
+  /*font-size:20px;*/
   margin:30px;
 }
 
@@ -213,7 +233,7 @@ li {
 .blog-content {
   text-align: center;
   border-top:dashed;
-  font-size:20px;
+  /*font-size:20px;*/
   margin:30px;
 }
 
@@ -226,13 +246,18 @@ li {
 .contact-content {
   text-align: center;
   border-top:dashed;
-  font-size:20px;
+  /*font-size:20px;*/
   margin:30px;
 }
 
 .contact-content span {
   cursor:pointer;
 }
+
+.github:hover {
+  color:#CF3235;
+}
+
 
 /** FOOTER */
 .footer {
@@ -282,34 +307,4 @@ li {
 
 .clearfix {
   *zoom:1;
-}
-
-/** ------------------------------------------------------------ */
-
-@media only handheld (max-width: 320px) {
-  .name {
-    max-width:inherit;
-  }
-  .name h1 {
-    font-size:100px;
-  }
-  .scroller p {
-    font-size:60px;
-  }
-  .logo {
-    width:100px;
-    height:100px;
-  }
-  .nav-bar li {
-    padding-bottom:42px;
-    padding-top:35px;
-  }
-  .header {
-    height:100px;
-    font-size:30px;
-  }
-
-  .section {
-    height: 100vh;
-  }
 }

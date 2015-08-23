@@ -23,6 +23,8 @@ $(function(){
 
   $('.resume').on('click', openResume);
   $('.github').on('click', github);
+  $('.clausehound').on('click', clausehound);
+  $('.wlu').on('click', wlu);
 
   // changes the height that is needed for the nav bar to stick to the top of the page.
   window.addEventListener('resize', function(){
@@ -89,4 +91,12 @@ var openResume = function() {
 
 var github = function() {
   window.location.href = "http://www.github.com/th30retical/";
+}
+
+var clausehound = function() {
+  window.location.href = "http://www.clausehound.com";
+}
+
+var wlu = function() {
+  window.location.href = "http://www.wlu.ca";
 }
