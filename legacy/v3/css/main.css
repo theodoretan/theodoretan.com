@@ -1,0 +1,276 @@
+/* Breakpoints:
+ * menu: 500px
+ * name: 267px
+ */
+
+/* GENERAL */
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+body {
+  font-family: 'oxygen', sans-serif;
+  background-color: #EEEEEE;
+  margin:0;
+  text-transform: uppercase;
+}
+
+h1, h2,  h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+  display:inline-block;
+  position: relative;
+  font-size:0px;
+}
+
+ul li {
+  display: inline-block;
+  cursor:pointer;
+  width: 100px;
+  padding:8px 0;
+  text-align: center;
+  font-size:15px;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position:relative;
+}
+
+.contain {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ABOUT */
+
+.about {
+  padding:50px 0;
+  height:304px;
+  background-color: #B6D5E1;
+  font-size:17px;
+}
+
+.content {
+  width:50%;
+}
+
+.content h1 {
+  text-decoration: underline;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  background-color: #65799B;
+}
+
+
+/* PROJECTS */
+
+.projects {
+  background-color: #555273;
+  /*color:#EEE;*/
+}
+
+/* CONTANT */
+
+.contact {
+  background-color: #323052;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #1A1C3A;
+}
+
+
+/* LANDER */
+
+.border {
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  display: inline-block;
+  position: relative;
+}
+
+.border:before, .border:after {
+  content:'';
+  display:block;
+  margin:auto;
+  height:3px;
+  width: 100%;
+  background: #000;
+
+  -moz-transition: width 0.7s ease, background-color 0.7s ease;
+  -webkit-transition: width 0.7s ease, background-color 0.7s ease;
+  -ms-transition: width 0.7s ease, background-color 0.7s ease;
+  transition: width 0.7s ease, background-color 0.7s ease;
+  -moz-transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  -ms-transition-delay: 0.25;
+  transition-delay: 0.25s;
+}
+
+body.is-loading .border {
+  opacity: 0;
+}
+
+body.is-loading .border:before, body.is-loading .border:after {
+  width:0px;
+  background:transparent;
+}
+
+/* MENU AND HEADER */
+
+.menu-container {
+  padding: 20px 0;
+}
+
+.header {
+  opacity:0.4;
+  z-index:10;
+}
+
+.header:hover {
+  opacity:0.8;
+}
+
+.nav {
+  text-align:center;
+  background-color: #EEEEEE;
+}
+
+.menu {
+  opacity: 1;
+  /*width:500px;*/
+
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  -moz-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+span.underline {
+  height: 2px;
+  background:#000;
+  width:100px;
+  position:absolute;
+  bottom:0;
+  transition: 0.25s linear;
+}
+
+.menu li:nth-child(1):hover ~ span.underline {
+  left:0px;
+}
+
+.menu li:nth-child(2):hover ~ span.underline {
+  left:100px;
+}
+
+.menu li:nth-child(3):hover ~ span.underline {
+  left:200px;
+}
+
+.menu li:nth-child(4):hover ~ span.underline {
+  left:300px;
+}
+
+.menu li:nth-child(5):hover ~ span.underline {
+  left:400px;
+}
+
+.menu li:hover a, li a:hover {
+  color: #333;
+}
+
+body.is-loading .menu {
+  opacity: 0;
+}
+
+.zero {
+  left:0px;
+}
+
+.one {
+  left:100px;
+}
+
+.two {
+  left:200px;
+}
+
+.three {
+  left:300px;
+}
+
+.four {
+  left:400px;
+}
+
+/* HELPER */
+.fixed {
+  position:fixed;
+  width:100%;
+}
+
+.light-hidden {
+  display:none;
+}
+
+.hidden {
+  display:none!important;
+  visibility:hidden;
+}
+
+.invisible {
+  visibility:hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content:" ";
+  display:table;
+}
+
+.clearfix::after {
+  clear:both;
+}
+
+.clearfix {
+  *zoom:1;
+}
