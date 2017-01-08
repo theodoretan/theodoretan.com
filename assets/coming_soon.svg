@@ -16,7 +16,8 @@
    id="svg8"
    inkscape:version="0.92.0 r15299"
    sodipodi:docname="coming_soon.svg">
-	 <style>
+  <style
+     id="style4485">
 		 @keyframes blink {
 		   50% {
 		     opacity: 0.0;
@@ -65,7 +66,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -136,7 +137,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Text"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:0.70555556px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -147,17 +149,17 @@
          id="tspan4537"
          x="0.64027101"
          y="3.9026041"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:0.5291667px;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">/~ $ Coming Soon</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:0.5291667px;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">~ $ Coming Soon</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="5.8165655"
-       y="3.768214"
+       x="5.4990664"
+       y="3.8211305"
        id="text4543"><tspan
          sodipodi:role="line"
          id="tspan4541"
-         x="5.8165655"
-         y="3.768214"
+         x="5.4990664"
+         y="3.8211305"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:0.5291667px;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.26458332">_</tspan></text>
     <flowRoot
        xml:space="preserve"
@@ -170,7 +172,7 @@
            height="6.8702693"
            x="22.887346"
            y="-7.6858697" /></flowRegion><flowPara
-         id="flowPara4583"></flowPara></flowRoot>    <flowRoot
+         id="flowPara4583" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4585"
        style="font-style:normal;font-weight:normal;font-size:2px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -181,5 +183,5 @@
            height="42.197273"
            x="37.075062"
            y="7.8027253" /></flowRegion><flowPara
-         id="flowPara4591"></flowPara></flowRoot>  </g>
+         id="flowPara4591" /></flowRoot>  </g>
 </svg>
