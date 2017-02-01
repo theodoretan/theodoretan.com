@@ -2,15 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Coming Soon · Theodore Tan</title>
     <meta name="author" content="Theodore Tan">
     <link rel="shortcut icon" href="assets/icon/favicon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
   </head>
-  <body>
-		<div class="container home">
-			<object type="image/svg+xml" data="./assets/coming_soon.svg" class="coming-soon"></object>
+  <body id="is-loading">
+		<div class="container lander">
+			<img class="headshot" src="./assets/headshot.jpg" alt="">
+			<h1 class="name">Theodore Tan</h1>
+			<div class="top-border box"></div>
+			<p class="words">Full-Stack Developer</p>
 		</div>
-    <script src="js/main.js"></script>
+
+		<!-- <nav>
+			<div class="">
+				<a href="">Theodore Tan</a>
+			</div>
+			<div class="">
+				<ul>
+					<li>About Me</li>
+					<li>Experience</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+		</nav> -->
+
+		<div class="wrapper">
+			<div class="experience-list">
+				<div class="square experience">
+					<a href="https://github.com/th30retical/sudoku-ai">
+						<div class="img-wrapper">
+							<img class="exp-img" src="./assets/experience/sudoku-500.png" alt="">
+						</div>
+						<div class="hidden">
+							<h4>Sudoku Solver</h4>
+						</div>
+					</a>
+				</div>
+				<div class="square experience">
+					<a href="https://github.com/th30retical/barsbychickenloaft">
+						<div class="img-wrapper">
+							<img class="exp-img" src="./assets/experience/bars-500.png" alt="">
+						</div>
+						<div class="hidden">
+							<h4>Bars</h4>
+						</div>
+					</a>
+				</div>
+				<div class="square experience">
+					<a href="http://www.north60tech.com">
+						<div class="img-wrapper">
+							<img class="exp-img" src="./assets/experience/north60-500.png" alt="">
+						</div>
+						<div class="hidden">
+							<h4>North60</h4>
+						</div>
+					</a>
+				</div>
+				<div class="square experience">
+					<a href="https://github.com/th30retical/RideON">
+						<div class="img-wrapper">
+							<img class="exp-img" src="./assets/experience/rideon-500.png" alt="">
+						</div>
+						<div class="hidden">
+							<h4>RideON</h4>
+						</div>
+					</a>
+				</div>
+				<div class="square experience">
+					<a href="https://clausehound.com">
+						<div class="img-wrapper">
+							<img class="exp-img" src="./assets/experience/clausehound-500.png" alt="">
+						</div>
+						<div class="hidden">
+							<h4>Clausehound</h4>
+						</div>
+					</a>
+				</div>
+				<div class="square experience">
+					<a href="https://github.com/th30retical/project_ration">
+						<div class="img-wrapper">
+							<img class="exp-img" src="./assets/experience/ration-500.png" alt="">
+						</div>
+						<div class="hidden">
+							<h4>Project Ration</h4>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,10 @@
 body {
+	min-width: 340px;
 	margin: 0;
+	background-color: #EEEEEE;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	font-size: 10pt;
 }
 
 .container {
@@ -7,9 +12,117 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-color: #EEEEEE;
+	flex-direction: column;
 }
 
-.coming-soon {
-	height: 60vh;
+.headshot {
+	width: 100px;
+	border-radius: 50%;
+}
+
+.name, .words {
+	margin: 25px 0;
+}
+
+.name, .words, .headshot {
+	transition: opacity 0.7s ease;
+	opacity: 1;
+	transition-delay: 0.25s;
+}
+
+#is-loading .name, #is-loading .words, #is-loading .headshot {
+	opacity: 0;
+}
+
+.box {
+	width: 80%;
+}
+
+.top-border:before {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 100%;
+	background: #000000;
+
+	transition: width 0.7s ease, background-color 0.7s ease;
+	transition-delay: 0.25s
+}
+
+#is-loading .top-border:before {
+	width: 0;
+	background: transparent;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.experience {
+	float: left;
+	position: relative;
+	max-width: 600px;
+	margin: 0;
+	width: 100%;
+}
+
+.img-wrapper {
+	vertical-align: baseline;
+}
+
+.exp-img {
+	display: block;
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+	body {
+		font-size: 11pt;
+	}
+
+	.headshot {
+		width: 125px;
+	}
+
+	.box {
+		width: 400px;
+	}
+
+	.experience {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		font-size: 12pt;
+	}
+
+	.headshot {
+		width: 150px;
+	}
+
+	.experience {
+		width: 33.33333%;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	.experience {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 2400px) {
+	.experience {
+		width: 20%;
+	}
 }
