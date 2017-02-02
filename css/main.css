@@ -7,6 +7,10 @@ body {
 	font-size: 10pt;
 }
 
+h3 {
+	font-size: 25px;
+}
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -55,13 +59,7 @@ body {
 	background: transparent;
 }
 
-.wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.experience {
+.square {
 	float: left;
 	position: relative;
 	max-width: 600px;
@@ -76,6 +74,40 @@ body {
 .exp-img {
 	display: block;
 	width: 100%;
+}
+
+.exp-words {
+	opacity: 0;
+	background: radial-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.9));
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: opacity 0.07s ease-in;
+	vertical-align: baseline;
+	text-align: center;
+}
+
+.exp-words::before {
+	content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.exp-words:hover {
+	opacity: 1;
+}
+
+.center {
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.center h3 {
+	color: #FFF;
 }
 
 .hidden {
@@ -96,7 +128,7 @@ body {
 		width: 400px;
 	}
 
-	.experience {
+	.square {
 		width: 50%;
 	}
 }
@@ -110,19 +142,19 @@ body {
 		width: 150px;
 	}
 
-	.experience {
+	.square {
 		width: 33.33333%;
 	}
 }
 
 @media only screen and (min-width: 1800px) {
-	.experience {
+	.square {
 		width: 25%;
 	}
 }
 
 @media only screen and (min-width: 2400px) {
-	.experience {
+	.square {
 		width: 20%;
 	}
 }
