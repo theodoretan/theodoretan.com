@@ -33,6 +33,11 @@ li {
 	flex-direction: column;
 }
 
+.lander {
+	background-size: cover!important;
+	background: url('../assets/background.png') no-repeat 50% 50%;
+}
+
 .headshot {
 	width: 100px;
 	border-radius: 50%;
@@ -167,9 +172,76 @@ nav > div {
 	color: #FFF;
 }
 
+.modal {
+	animation-fill-mode: forwards;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	height: 100vh;
+}
+
+.fadeInLeftOverlay {
+	animation-name: fadeInLeft;
+	animation-duration: 0.3s;
+
+}
+
+.fadeInRightOverlay {
+	animation-name: fadeInRight;
+	animation-duration: 0.3s;
+}
+
+.fadeOutLeftOverlay {
+	animation: fadeOutLeft 0.3s;
+}
+
+.fadeOutRightOverlay {
+	animation-name: fadeOutRight;
+	animation-duration: 0.3s;
+}
+
+.pre-overlay {
+	margin: 0;
+	left:-20vw;
+	width:20vw;
+	background: rgba(0,0,0,0.4);
+}
+
+.overlay {
+	margin: 0;
+	right: -80vw;
+	background: #FFFFFF;
+	width: 80vw;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .hidden {
 	display: none;
 	visibility: hidden;
+}
+
+@keyframes fadeInLeft {
+	0% {opacity: 0; left: -20vw;}
+	100% {opacity: 1; left:0;}
+}
+
+@keyframes fadeOutLeft {
+	from {opacity: 1; left:0;}
+	to {opacity: 0; left: -20vw;}
+}
+
+@keyframes fadeInRight {
+	0% {opacity: 0; right: -80vw;}
+	100% {opacity: 1; right:0;}
+}
+
+@keyframes fadeOutRight {
+	from {opacity: 1; right:0;}
+	to {opacity: 0; right: -80vw;}
 }
 
 @media only screen and (min-width: 600px) {
