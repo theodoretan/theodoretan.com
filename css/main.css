@@ -232,6 +232,10 @@ nav > div {
 	cursor: pointer;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 
 .hidden {
 	display: none;
@@ -292,7 +296,6 @@ nav > div {
 }
 
 @media only screen and (min-width: 800px) {
-
 	.pre-overlay {
 		left:-20vw;
 		width:20vw;

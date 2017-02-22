@@ -18,7 +18,7 @@ for (let link of links) {
 		rightOverlay.classList.remove('fadeOutRightOverlay');
 		leftOverlay.classList.add('fadeInLeftOverlay');
 		rightOverlay.classList.add('fadeInRightOverlay');
-		body.style.overflow = 'hidden';
+		body.classList.add('no-scroll');
 	}
 }
 
@@ -27,7 +27,7 @@ cancelBtn.onclick = leftOverlay.onclick = (event) => {
 	rightOverlay.classList.remove('fadeInRightOverlay');
 	leftOverlay.classList.add('fadeOutLeftOverlay');
 	rightOverlay.classList.add('fadeOutRightOverlay');
-	body.style.overflow = 'auto';
+	body.classList.remove('no-scroll');
 }
 
 // will have to do JSON.parse() for modals
