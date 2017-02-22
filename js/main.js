@@ -3,6 +3,7 @@ window.onload = () => {
 	div.removeAttribute('id');
 }
 
+let body = document.body;
 let links = document.getElementsByClassName('links');
 let leftOverlay = document.getElementsByClassName('pre-overlay')[0];
 let rightOverlay = document.getElementsByClassName('overlay')[0];
@@ -17,6 +18,7 @@ for (let link of links) {
 		rightOverlay.classList.remove('fadeOutRightOverlay');
 		leftOverlay.classList.add('fadeInLeftOverlay');
 		rightOverlay.classList.add('fadeInRightOverlay');
+		body.style.overflow = 'hidden';
 	}
 }
 
@@ -25,6 +27,7 @@ cancelBtn.onclick = leftOverlay.onclick = (event) => {
 	rightOverlay.classList.remove('fadeInRightOverlay');
 	leftOverlay.classList.add('fadeOutLeftOverlay');
 	rightOverlay.classList.add('fadeOutRightOverlay');
+	body.style.overflow = 'auto';
 }
 
 // will have to do JSON.parse() for modals
