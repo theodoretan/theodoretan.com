@@ -1,0 +1,8 @@
+{
+	"Title": "About Me",
+	"Content": [
+		{"Paragraph": "Hi! My name is Theodore Tan (or just Theo). I'm currently studying Computer Science at Wilfrid Laurier University, with most of my time spent honing my skills as a full-stack web developer and reinforcing my addiction to caffeine. ☕"},
+		{"Paragraph": "Please stay for a bit and check out what I have worked on in the past!"},
+		{"Image": "about-img.png"}
+	]
+}
