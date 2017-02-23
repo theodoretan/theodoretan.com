@@ -265,6 +265,20 @@ nav > div {
 	overflow: hidden;
 }
 
+.social-container {
+	display: flex;
+	justify-content: center;
+}
+
+.social-link {
+	margin: 0 auto;
+}
+
+.social-links {
+	width: 80px;
+	height: 80px;
+}
+
 
 .hidden {
 	display: none;

@@ -20,7 +20,7 @@ for (let link of links) {
 		rightOverlay.classList.add('fadeInRightOverlay');
 		body.classList.add('no-scroll');
 
-		if (link.id == 'about') {
+		if (link.id == 'about' || link.id == 'contact') {
 			getFiles(link.id, '');
 		} else {
 			getFiles('experience', link.id);
@@ -47,6 +47,14 @@ let getFiles = (content, picker) => {
 	let c = content;
 	let p = picker;
 
+	let setImage = (filename, imgclass, parent) => {
+		let img = new Image();
+		img.src = '../assets/' + filename;
+		img.classList.add(imgclass);
+		parent.appendChild(img);
+		return;
+	};
+
 	ajax.onreadystatechange = () => {
 		try {
 			if (ajax.readyState === XMLHttpRequest.DONE) {
@@ -58,7 +66,6 @@ let getFiles = (content, picker) => {
 
 					if (c === 'experience') {
 						json = json[p];
-						// console.log(json);
 					}
 
 					let title = json.Title;
@@ -79,10 +86,29 @@ let getFiles = (content, picker) => {
 
 										break;
 									case 'Image':
-										let img = new Image();
-										img.src = '../assets/' + content[key][type];
-										img.classList.add('overlay-img');
-										innerOverlay.appendChild(img);
+										setImage(content[key][type], 'overlay-img', innerOverlay);
+										// let img = new Image();
+										// img.src = '../assets/' + content[key][type];
+										// img.classList.add('overlay-img');
+										// innerOverlay.appendChild(img);
+										break;
+									case 'Links':
+										let div = document.createElement('div');
+										div.className = 'social-container';
+										for (var links in content[key][type]) {
+											let href = document.createElement('a');
+											href.className = 'social-link';
+											for (var t in content[key][type][links]) {
+												let c = content[key][type][links][t];
+												if (t === 'Image') {
+													setImage(c, 'social-links', href);
+												} else if (t === 'Link') {
+													href.href = c;
+												}
+											}
+											div.appendChild(href);
+										}
+										innerOverlay.appendChild(div);
 										break;
 									default:
 										console.log('Unknown Type: ' + type);
