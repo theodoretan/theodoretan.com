@@ -2,10 +2,18 @@
 	"Title": "Contact Me",
 	"Content": [
 		{"Paragraph": "Let's Chat: hi@theodoretan.com"},
-		{"Images": [
-			{"Image": "github.png"},
-			{"Image": "linkedin.png"},
-			{"Image": "instagram.png"}
+		{"Links": [
+			{
+				"Image": "github.png",
+				"Link": "http://github.com/theodoretan/"
+			},
+			{
+				"Image": "linkedin.png",
+				"Link": "https://www.linkedin.com/in/theodore-tan-999b0ab0/"},
+			{
+				"Image": "instagram.png",
+				"Link": "https://www.instagram.com/th30retical/"
+			}
 		]}
 	]
 }
