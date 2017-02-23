@@ -1,0 +1,11 @@
+{
+	"Title": "Contact Me",
+	"Content": [
+		{"Paragraph": "Let's Chat: hi@theodoretan.com"},
+		{"Images": [
+			{"Image": "github.png"},
+			{"Image": "linkedin.png"},
+			{"Image": "instagram.png"}
+		]}
+	]
+}
