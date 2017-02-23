@@ -220,6 +220,35 @@ nav > div {
 	align-items: center;
 }
 
+.inner-overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	overflow-y: auto;
+	height: 100%;
+
+	text-align: center;
+	text-transform: none;
+	font-size: 15px;
+	letter-spacing: 1pt;
+}
+
+.inner-overlay > * {
+	margin: auto 80px;
+	max-width: 800px;
+}
+
+.overlay-p {
+	/*margin: 25px 80px;*/
+}
+
+.overlay-img {
+	/*max-width: 800px;*/
+	width: 100%;
+	margin: auto;
+}
+
 .cancel {
 	position: absolute;
 	top: 25px;
