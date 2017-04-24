@@ -1,15 +1,15 @@
 window.onload = () => {
-	let div = document.getElementById('is-loading');
+	let div = document.querySelector('#is-loading');
 	div.removeAttribute('id');
 }
 
 let body = document.body;
-let links = document.getElementsByClassName('links');
-let leftOverlay = document.getElementsByClassName('pre-overlay')[0];
-let rightOverlay = document.getElementsByClassName('overlay')[0];
-let cancelBtn = document.getElementsByClassName('cancel-btn')[0];
+let links = document.querySelectorAll('.links');
+let leftOverlay = document.querySelector('.pre-overlay');
+let rightOverlay = document.querySelector('.overlay');
+let cancelBtn = document.querySelector('.cancel-btn');
 
-console.log(links);
+// console.log(links);
 
 for (let link of links) {
 	link.onclick = (event) => {
@@ -35,7 +35,7 @@ cancelBtn.onclick = leftOverlay.onclick = (event) => {
 	rightOverlay.classList.add('fadeOutRightOverlay');
 	body.classList.remove('no-scroll');
 
-	let innerOverlay = document.getElementsByClassName('inner-overlay')[0];
+	let innerOverlay = document.querySelector('.inner-overlay');
 	innerOverlay.innerHTML = '';
 }
 
@@ -59,7 +59,7 @@ let getFiles = (content, picker) => {
 		try {
 			if (ajax.readyState === XMLHttpRequest.DONE) {
 				if (ajax.status === 200) {
-					let innerOverlay = document.getElementsByClassName('inner-overlay')[0];
+					let innerOverlay = document.querySelector('.inner-overlay')	;
 					innerOverlay.innerHTML = '';
 
 					let json = JSON.parse(ajax.responseText);
