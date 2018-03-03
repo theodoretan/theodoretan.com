@@ -1,0 +1,8 @@
+- [x] Get assets set up with scss
+- [ ] Design new site
+  - [ ] What pages?
+  - [ ] What will it look like? (Simple? Complex?)
+  - [ ] What content will be on the site?
+  - [ ] Will the blog be on this? or will it integrate with a third party service?
+- [ ] Where will this be hosted? (Heroku? Another service?)
+- [x] Setup analytics
