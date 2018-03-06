@@ -9,16 +9,48 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
     <link rel="stylesheet" href="/index.css" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <% erb :analytics %>
+    <% if settings.production? %>
+      <% erb :analytics %>
+    <% end %>
   </head>
   <body>
     <div class="container">
       <div class="container-left">
-        <div>
+        <div class="content-name">
           <h1>Theodore Tan</h1>
         </div>
-        <div>
+        <div class="content-description">
           <p>Front-end Developer at Shopify</p>
+        </div>
+        <div class="content-links">
+          <ul class="content-list">
+            <li class="content-item">
+              <a class="content-link" href="https://github.com/theodoretan" title="Github" aria-label="Link to Github">
+                <svg viewBox="0 0 15 15" width="25" height="25">
+                  <use href="images/github.svg#logo" />
+                </svg>
+              </a>
+            </li>
+            <li class="content-item">
+              <a class="content-link" href="https://instagram.com/theodoretan_" title="Instagram" aria-label="Link to Instagram">
+                <svg viewBox="0 0 15 15" width="25" height="25">
+                  <use href="images/instagram.svg#logo" />
+                </svg>
+              </a>
+            </li>
+            <li class="content-item">
+              <a class="content-link" href="files/resume.pdf" title="Resume" aria-label="Link to Resume">
+                <svg viewBox="0 0 15 15" width="25" height="25">
+                  <use href="images/resume.svg#logo" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content-footer">
+          <div class="copyright">
+            <p>&copy; Theodore Tan <%= Time.now.year %></p>
+          </div>
         </div>
       </div>
       <div class="container-right">
