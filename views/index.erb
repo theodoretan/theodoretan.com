@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
     <link rel="stylesheet" href="/index.css" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <% if settings.production? %>
-      <% erb :analytics %>
+    <% if Sinatra::Base.production? %>
+      <%= erb :analytics %>
     <% end %>
   </head>
   <body>
