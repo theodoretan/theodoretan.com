@@ -1,0 +1,5 @@
+runtime: ruby25
+entrypoint: bundle exec rackup -p $PORT
+
+env_variables:
+  PORT: 8080

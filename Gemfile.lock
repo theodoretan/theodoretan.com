@@ -25,11 +25,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack
   sass
   sinatra (>= 2.0.2)
 
 RUBY VERSION
-   ruby 2.4.3p205
+   ruby 2.5.5p157
 
 BUNDLED WITH
    1.17.3
