@@ -1,19 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ffi (1.10.0)
+    ffi (1.12.2)
     mustermann (1.0.3)
     rack (2.0.7)
     rack-protection (2.0.5)
       rack
-    rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
-      ffi (~> 1.0)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (2.2.1)
+      ffi (~> 1.9)
     sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -25,7 +19,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sass
+  sassc
   sinatra (>= 2.0.2)
 
 RUBY VERSION
