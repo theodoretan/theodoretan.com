@@ -1,4 +1,4 @@
-require 'sass'
+require 'sassc'
 require 'sinatra/base'
 
 require_relative 'lib/sinatra/find_template'
