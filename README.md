@@ -8,9 +8,16 @@ The past versions of my website are in the legacy folder and you can see my desi
 
 ## Startup
 
-To start the server
+To start the server:
 
 ```
 $ bundle install
 $ bundle exec rackup
+```
+
+With docker:
+
+```
+$ docker build -t theodoretan.com .
+$ docker run -p 80:8080 theodoretan.com
 ```
