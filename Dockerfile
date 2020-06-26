@@ -1,9 +1,11 @@
-FROM ruby:2.6.3
-
-RUN apt-get update -qq && apt-get install -y build-essential
+FROM ruby:2.6.3-alpine
 
 ENV APP_HOME /app
-RUN mkdir $APP_HOME
+
+RUN apk add --update build-base libffi-dev \
+  && mkdir $APP_HOME \
+  && rm -rf /var/cache/apk/*
+
 WORKDIR $APP_HOME
 
 ADD Gemfile* $APP_HOME/
