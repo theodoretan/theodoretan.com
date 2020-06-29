@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>blog • theodore.tan</title>
+    <meta name="author" name="Theodore Tan">
+    <meta name="description" content="The personal website of Theodore Tan. Full stack developer currently working as a Frontend Developer at Shopify">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <% if Sinatra::Base.production? %>
+      <%= erb :analytics %>
+    <% end %>
+  </head>
+  <body>
+
+    nav (in own partial) • home • blog
+    list of posts (maybe with preview)
+    <%= posts %>
+  </body>
+</html>

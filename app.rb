@@ -16,6 +16,20 @@ class PersonalWebsiteApp < Sinatra::Base
     erb :index
   end
 
+  get '/blog' do
+    dir_path = File.join(File.dirname(__FILE__), '_posts')
+    posts = Dir.glob('*.md', base: dir_path).sort
+
+    erb :blog, :locals => { posts: posts }
+  end
+
+  get '/blog/:post' do
+    post = params['post']
+    # check if post exists
+    # if yes -> post
+    # if not -> post doesn't exist view
+  end
+
   get '/index.css' do
     scss :index
   end
