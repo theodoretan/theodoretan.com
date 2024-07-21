@@ -1,23 +1,40 @@
-# Personal Website
+# Welcome to Remix!
 
-This is the code for my [personal website][weblink].
+- 📖 [Remix docs](https://remix.run/docs)
 
-The past versions of my website are in the legacy folder and you can see my design progression though the versions.
+## Development
 
-[weblink]: http://theodoretan.com
+Run the dev server:
 
-## Startup
-
-To start the server:
-
-```
-$ bundle install
-$ bundle exec rackup
+```shellscript
+npm run dev
 ```
 
-With docker:
+## Deployment
 
+First, build your app for production:
+
+```sh
+npm run build
 ```
-$ docker build -t theodoretan.com .
-$ docker run -p 80:8080 theodoretan.com
+
+Then run the app in production mode:
+
+```sh
+npm start
 ```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+- `build/server`
+- `build/client`
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
